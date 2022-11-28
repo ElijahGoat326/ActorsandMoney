@@ -1,8 +1,8 @@
 public class Actor extends Moviemaker{
-    String AmountOfMoneyMade;
-    String filmAmount;
-    String totalmoneymade;
-    String amountoffilms;
+    private String AmountOfMoneyMade;
+    private String filmAmount;
+    private String totalmoneymade;
+    private String amountoffilms;
 
     public Actor(String rank, String name, String average, String numberOfFilms, String amountOfMoneyMade, String filmAmount, String totalmoneymade, String amountoffilms) {
         super(rank, name, average, numberOfFilms);
