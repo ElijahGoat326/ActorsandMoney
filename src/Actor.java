@@ -4,8 +4,8 @@ public class Actor extends Moviemaker{
     private String totalmoneymade;
 
 
-    public Actor(String rank, String name, String average, String numberOfFilms, String amountOfMoneyMade, String filmAmount, String totalmoneymade) {
-        super(rank, name, average, numberOfFilms);
+    public Actor(String rank, String name, String average, String numberOfFilms, String worldwideTotal, String amountOfMoneyMade, String filmAmount, String totalmoneymade) {
+        super(rank, name, average, numberOfFilms, worldwideTotal);
         AmountOfMoneyMade = amountOfMoneyMade;
         this.filmAmount = filmAmount;
         this.totalmoneymade = totalmoneymade;
