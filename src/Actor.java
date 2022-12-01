@@ -1,4 +1,4 @@
-public class Actor extends Moviemaker{
+public class Actor extends Moviemaker {
     private String AmountOfMoneyMade;
     private String filmAmount;
     private String totalmoneymade;
@@ -36,4 +36,7 @@ public class Actor extends Moviemaker{
         this.totalmoneymade = totalmoneymade;
     }
 
+    void describeSelf() {
+        System.out.println("I'm " + name + ", my rank is " + rank + "I have an average of" + average + " I am in " + numberOfFilms + " My film amount is " + filmAmount + " My total money made is" + AmountOfMoneyMade);
+    }
 }
