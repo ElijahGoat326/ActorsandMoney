@@ -1,15 +1,21 @@
-class Directors extends Moviemaker {
+public class Directors extends Moviemaker {
 
     // Fields
-    private String highestGrossingFilm;
+    public String highestGrossingFilm;
 
     // Constructors
 
-    private Directors(String rank, String name, String average, String numberOfFilms, String worldwideTotal, String highestGrossingFilm) {
+    public Directors(String rank, String name, String average, String numberOfFilms, String worldwideTotal) {
         super(rank, name, average, numberOfFilms, worldwideTotal);
         this.highestGrossingFilm = highestGrossingFilm;
     }
+
+    public String getHighestGrossingFilm() {
+        return highestGrossingFilm;
+    }
 }
+
+
 
 
 
