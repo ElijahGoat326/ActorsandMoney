@@ -37,6 +37,6 @@ public class Actor extends Moviemaker {
     }
 
     void describeSelf() {
-        System.out.println("I'm " + name + ", my rank is " + rank + "I have an average of" + average + " I am in " + numberOfFilms + " My film amount is " + filmAmount + " My total money made is" + AmountOfMoneyMade);
+        System.out.println("I'm " + name + ", my rank is " + rank + ",I have an average of" + average + " ,I am in " + numberOfFilms + " ,My film amount is " + filmAmount + " ,My total money made is" + AmountOfMoneyMade);
     }
 }
