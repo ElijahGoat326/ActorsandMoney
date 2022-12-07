@@ -1,22 +1,15 @@
 public class Actor extends Moviemaker {
     private String AmountOfMoneyMade;
-    private String filmAmount;
     private String totalmoneymade;
 
-
-    public Actor(String rank, String name, String average, String numberOfFilms, String worldwideTotal, String amountOfMoneyMade, String filmAmount) {
+    public Actor(String rank, String name, String average, String numberOfFilms, String worldwideTotal, String amountOfMoneyMade) {
         super(rank, name, average, numberOfFilms, worldwideTotal);
         AmountOfMoneyMade = amountOfMoneyMade;
-        this.filmAmount = filmAmount;
         this.totalmoneymade = totalmoneymade;
     }
 
     public String getAmountOfMoneyMade() {
         return AmountOfMoneyMade;
-    }
-
-    public String getFilmAmount() {
-        return filmAmount;
     }
 
     public String getTotalmoneymade() {
@@ -28,15 +21,11 @@ public class Actor extends Moviemaker {
         AmountOfMoneyMade = amountOfMoneyMade;
     }
 
-    public void setFilmAmount(String filmAmount) {
-        this.filmAmount = filmAmount;
-    }
-
     public void setTotalmoneymade(String totalmoneymade) {
         this.totalmoneymade = totalmoneymade;
     }
 
     void describeSelf() {
-        System.out.println("I'm " + name + ", my rank is " + rank + ",I have an average of" + average + " ,I am in " + numberOfFilms + " ,My film amount is " + filmAmount + " ,My total money made is" + AmountOfMoneyMade);
+        System.out.println("I'm " + name + ", my rank is " + rank + ",I have an average of" + average + " ,I am in " + numberOfFilms +  " ,My worldwide total is" + getWorldwideTotal() + " ,My amount of money made is" + AmountOfMoneyMade);
     }
 }
