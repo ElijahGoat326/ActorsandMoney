@@ -25,7 +25,7 @@ public class Actor extends Moviemaker {
         this.totalmoneymade = totalmoneymade;
     }
 
-    void describeSelf() {
-        System.out.println("I'm " + name + ", my rank is " + rank + ",I have an average of" + average + " ,I am in " + numberOfFilms +  " ,My worldwide total is" + getWorldwideTotal() + " ,My amount of money made is" + AmountOfMoneyMade);
+    public String toString() {
+        return ("I'm " + name + ", my rank is " + rank + ",I have an average of" + average + " ,I am in " + numberOfFilms +  " ,My worldwide total is" + getWorldwideTotal() + " ,My amount of money made is" + AmountOfMoneyMade);
     }
 }
