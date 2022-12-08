@@ -1,4 +1,7 @@
+import java.util.ArrayList;
+
 public class Moviemaker {
+    static ArrayList<Moviemaker> allmoviemakers = new ArrayList<>();
 
     String rank;
     String name;
@@ -12,6 +15,15 @@ public class Moviemaker {
         this.average = average;
         this.numberOfFilms = numberOfFilms;
         this.worldwideTotal = worldwideTotal;
+        allmoviemakers.add(this);
+    }
+
+    public static ArrayList<Moviemaker> getAllmoviemakers() {
+        return allmoviemakers;
+    }
+
+    public static void setAllmoviemakers(ArrayList<Moviemaker> allmoviemakers) {
+        Moviemaker.allmoviemakers = allmoviemakers;
     }
 
     public String getRank() {
