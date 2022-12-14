@@ -43,6 +43,15 @@ public class Actor extends Moviemaker {
                 line = sc.nextLine();
                 //process the line
                 System.out.println(line);
+                Scanner lineScanner = new Scanner(line);
+                lineScanner.useDelimiter("\t");
+                String rank = lineScanner.next();
+                String average = lineScanner.next();
+                String name = lineScanner.next();
+                String numberOffilms = lineScanner.next();
+                String worldwidetotal = lineScanner.next();
+                String amountOfMoneyMade = String.valueOf(lineScanner = new Scanner(line));
+                new Actor (rank, name,average,numberOffilms,worldwidetotal,amountOfMoneyMade);
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
