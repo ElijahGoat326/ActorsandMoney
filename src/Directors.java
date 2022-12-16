@@ -23,7 +23,7 @@ public class Directors extends Moviemaker {
     }
     // Methods
     public String toString() {
-        return ("Hi! I'm ranked #" + rank + " in the world. My name is" + name + " and I've earned a total of " + worldwideTotal + ". I've made" + numberOfFilms + " films, and in those I average" + average + ".I'm most famous for directing " + HighestGrossingFilm + ".");
+        return ("Hi! I'm ranked #" + rank + " in the world. My name is " + name + " and I've earned a total of " + worldwideTotal + ". I've made" + numberOfFilms + " films, and in those I average" + average + ".I'm most famous for directing " + HighestGrossingFilm + ".");
 
     }
     static void readAllData() {
@@ -42,8 +42,8 @@ public class Directors extends Moviemaker {
                 String worldwideTotal = lineScanner.next();
                 String numberOfFilms = lineScanner.next();
                 String average = lineScanner.next();
-                String HighestGrossingFilm = lineScanner.next();
-                new Directors (name, rank, HighestGrossingFilm, numberOfFilms, average, worldwideTotal);
+                String HighestGrossingFilm = String.valueOf(lineScanner = new Scanner(line));
+                new Directors (rank, name, average, numberOfFilms, worldwideTotal, HighestGrossingFilm);
             }
         }
         catch (FileNotFoundException e)
